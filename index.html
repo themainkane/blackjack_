@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/scss/style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="all">
+      <div class="controls">
+        <header class="header">
+          <div class="header__title">
+            <img
+              class="header__title-img"
+              src="src/img/icon.png"
+              alt="card suits"
+            />
+            <h1 class="header__title-blackjack">Blackjack</h1>
+          </div>
+          <button class="header__btn">New Round</button>
+        </header>
+        <!-- dealer -->
+        <div class="dealer">
+          <div class="dealer__name name"><p>Dealer</p></div>
+          <div class="dealer__score score">Score: 0</div>
+        </div>
+        <!-- winner / looser -->
+        <div class="winner"><p>YOU WON!</p></div>
+        <!-- player -->
+        <div class="player">
+          <div class="player__name name"><p>Player</p></div>
+          <div class="player__score score">Score: 1</div>
+        </div>
+        <div class="options">
+          <div class="options__hit"><p>Hit</p></div>
+          <div class="options__stand"><p>Stands</p></div>
+        </div>
+
+        <!-- end of controls -->
+      </div>
+
+      <div class="table">
+        <div class="cards">
+          <div class="card face-8-of-clubs"></div>
+          <div class="card face-5-of-hearts"></div>
+        </div>
+        <div class="cards">
+          <div class="card face-8-of-clubs"></div>
+          <div class="card face-5-of-hearts"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

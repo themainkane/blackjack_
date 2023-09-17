@@ -1,0 +1,79 @@
+// variable declaration
+
+$white: white;
+$blue: #5782c2;
+$shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+// imports
+@import "_cards.scss";
+
+
+// mixin declaration
+@mixin flex-top-left {
+    display: flex;
+    flex-direction: row;
+    
+}
+@mixin flex-center-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+// global styling
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+}
+
+.all {
+    @include flex-top-left;
+    height: 100vh;
+    width: 100vw;
+    margin: 5% 0%;
+        .controls{
+            @include flex-center-top;
+            height: 25rem;
+            margin: 1%;
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                &__title {
+                    display: flex;
+                    flex-direction: row;
+                    &-blackjack{
+                        display: flex;
+                        align-self: flex-end;
+                        font-weight: 800;
+                    }
+                    &-img {
+                        width:20%;
+                        margin: 2%
+                    }
+                }
+                &__btn {
+                    margin-top: 3%;
+                    background-color: $blue;
+                    border-radius: 7%;
+
+                    // Finish styling box then move onto rest of controls, worry about table width later dont forget to create repo on github!
+                }
+            }
+            
+        }
+
+        .table {
+            background-image: url(../img/bg.jpg);
+            background-size: cover;
+            height: 75%;
+            
+        }
+}
